@@ -13,51 +13,52 @@
 <body>
 
     <section class="main-container">
+
         <div class="side">
             <div>
-                <img src="odin-lined.png" alt="odin logo">
-                <h1>ODIN</h1>
+                <a href="https://www.theodinproject.com">
+                    <img src="odin-lined.png" alt="odin logo">
+                </a>
+                <a href="https://www.theodinproject.com">
+                    <h1>ODIN</h1>
+                </a>
             </div>
         </div>
-        <div class="main">
+
+        <div class="right-side">
+
             <div class="text-container">
                 <p>This is not a real online service! You know you need something like this in your life to help you
                     realize your deepest dreams. Sign up <i>now</i> to get started.</p>
                 <p>You <i>know</i> you want to.</p>
             </div>
+
             <div class="form-container">
                 <h3>Let's do this!</h3>
                 <form action="">
-                    <ul role="list">
-                        <li>
-                            <label for="first">First name</label>
+                    <div class="flex-container">
+                        <div class="flex-column">
+                            <label for="first">First name*</label>
                             <input id="first" type="text">
-                        </li>
-                        <li>
-                            <label for="last">Last name</label>
-                            <input id="last" type="text">
-                        </li>
-                        <li>
-                            <label for="email">Email Address</label>
+                            <label for="email">Email Address*</label>
                             <input id="email" type="email">
-                        </li>
-                        <li>
+                            <label for="password">Password*</label>
+                            <input required id="password" type="password">
+                        </div>
+                        <div class="flex-column">
+                            <label for="last">Last name*</label>
+                            <input id="last" type="text">
                             <label for="number">Phone Number</label>
                             <input id="number" type="number">
-                        </li>
-                        <li>
-                            <label for="password">Password</label>
-                            <input id="password" type="password">
-                        </li>
-                        <li>
-                            <label for="confirm">Confirm Password</label>
-                            <input id="confirm" type="password">
-                        </li>
-                    </ul>
-                </form>
+                            <label for="confirm">Confirm Password*</label>
+                            <input required id="confirm" type="password">
+                        </div>
+                    </div>
             </div>
+
             <div class="footer">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
+                </form>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
